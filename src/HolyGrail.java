@@ -1,11 +1,13 @@
+
+
+import java.util.Scanner;
+
 /**
  * HolyGrail.java is the first lab I will write.
  * It is a simple UI program that talks to the user.
- * 09/15/2020
+ * @version 09/15/2020
  * @author bzhou
  */
-
-import java.util.Scanner;
 
 public class HolyGrail {
 
