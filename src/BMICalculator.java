@@ -22,7 +22,7 @@ public class BMICalculator {
             try {
                 System.out.print("Enter your height in feet and inches (Ex. 6'1\") or \"Q\" to quit: ");
                 textHeight = keyboard.nextLine();
-                if(textHeight.equals("Q"))
+                if(textHeight.toUpperCase().equals("Q"))
                     break;
                 qtPos = textHeight.indexOf("'");
                 dblQtPos = textHeight.indexOf("\"");
