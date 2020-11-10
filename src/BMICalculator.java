@@ -39,7 +39,7 @@ public class BMICalculator {
 
             }
             catch(Exception e)  {
-                System.out.print("Error: " + e);
+                System.out.println("Error: " + e);
             }
 
         }
