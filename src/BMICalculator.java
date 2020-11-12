@@ -22,8 +22,10 @@ public class BMICalculator {
             try {
                 System.out.print("Enter your height in feet and inches (Ex. 6'1\") or \"Q\" to quit: ");
                 textHeight = keyboard.nextLine();
-                if(textHeight.toUpperCase().equals("Q"))
+                if(textHeight.toUpperCase().equals("Q")) {
+                    System.out.println("* program finished *");
                     break;
+                }
                 qtPos = textHeight.indexOf("'");
                 dblQtPos = textHeight.indexOf("\"");
                 if(qtPos != -1 && dblQtPos != -1) {
@@ -40,6 +42,8 @@ public class BMICalculator {
             }
             catch(Exception e)  {
                 System.out.println("Error: " + e);
+                if (e instanceof java.util.InputMismatchException)
+                    keyboard.nextLine();
             }
 
         }
